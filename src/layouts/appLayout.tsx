@@ -28,7 +28,7 @@ const GetSectionLayout = memo(function E({ children }: PropsWithChildren) {
       <div className="w-full h-screen lg:w-4/5 bg-cover bg-center ">
         <div className="w-full md:h-full">
           <Navbar toggleSideBar={toggleSideBar} />
-          <div className="w-full h-full overflow-y-scroll">{children}</div>
+          <div className="w-full overflow-y-scroll">{children}</div>
         </div>
       </div>
     </div>

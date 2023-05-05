@@ -17,8 +17,8 @@ export default function Portfolio() {
   const [showModal, _showModal] = useState(false);
   const [showImage, _showImage] = useState(false);
   return (
-    <div className="w-full bg-port-bg-dark3 relative">
-      <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center  overflow-y-scroll">
+    <div className="w-full h-full bg-port-bg-dark3 relative">
+      <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center overflow-y-scroll">
         <h5 className="text-4xl mt-8 mb-16 text-port-red">Portfolio</h5>
         <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           {portfolio.map((i) => (

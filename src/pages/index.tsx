@@ -6,7 +6,7 @@ import Typed from "react-typed";
 export default function Home() {
   return (
     <div className="w-full h-screen bg-port-bg-big">
-      <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center">
+      <div className="animate__animated animate__fadeInRight w-full h-screen backdrop-brightness-50 flex flex-col items-center justify-center">
         <h3 className="text-4xl sm:text-6xl font-nunito text-port-red mb-10">
           {user.first_name} {user.last_name}
         </h3>

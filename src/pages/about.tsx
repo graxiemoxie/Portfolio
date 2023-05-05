@@ -6,7 +6,7 @@ export default function AboutMe() {
     <div className="w-full bg-port-bg-black">
       <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center overflow-y-scroll">
         <h5 className="text-4xl mt-8 mb-6 text-port-red">About Me</h5>
-        <div className="flex flex-col justify-between lg:flex-row w-full xl:w-4/5 mx-auto">
+        <div className="flex flex-col justify-between md:flex-row w-full xl:w-4/5 mx-auto">
           <div className="w-full lg:w-2/3 py-6 px-3">
             <p className="text-base lg:text-lg font-inter text-port-off-white">
               Hi there, I&apos;m{" "}
@@ -28,8 +28,8 @@ export default function AboutMe() {
               landscape of web development.
             </p>
           </div>
-          <div>
-            <h5 className="font-bold text-lg">Personal Info</h5>
+          <div className="px-3 lg:px-0">
+            <h5 className="font-bold text-lg mt-10 md:mt-0">Personal Info</h5>
             <div>
               <ul className="text-xs text-port-off-white">
                 <li className="w-full flex">
@@ -62,7 +62,7 @@ export default function AboutMe() {
                 </li>
               </ul>
             </div>
-            <div className="mt-4">
+            <div className="mt-8 md:mt-4">
               <a
                 className="font-nunito border-port-red border-2 border-solid hover:text-white hover:bg-port-red rounded-xl text-port-red py-2 px-6 text-lg"
                 href="https://drive.google.com/uc?export=download&id=12qcOEs_ke8-RD_an3pIiAc2by264oy8G"
