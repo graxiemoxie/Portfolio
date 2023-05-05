@@ -1,10 +1,19 @@
 import { Modal } from "@/components";
 import { portfolio } from "@/constants";
 import { PortfolioInterface } from "@/interfaces";
+import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Portfolio() {
-  const [details, _details] = useState<PortfolioInterface>();
+  const [details, _details] = useState<PortfolioInterface>({
+    title: "",
+    file: "",
+    info: "",
+    client: "",
+    technologies: "",
+    industry: "",
+    url: "",
+  });
   const [showModal, _showModal] = useState(false);
   const [showImage, _showImage] = useState(false);
   return (
@@ -17,13 +26,13 @@ export default function Portfolio() {
           {portfolio.map((i) => (
             <div
               key={i.file}
-              className="rounded w-fit h-fit relative"
+              className="rounded w-full h-full relative"
               onClick={() => {
                 _showModal(true);
                 _details(i);
               }}
             >
-              <div>
+              <div className="w-full h-full relative">
                 <img src={i.file} alt={i.industry} />
               </div>
 
@@ -46,11 +55,7 @@ export default function Portfolio() {
               className="w-full h-full cursor-pointer"
               onClick={() => _showImage(true)}
             >
-              <img
-                src={details?.file}
-                alt={details?.title}
-                className="w-full h-full object-contain"
-              />
+              <Image src={details?.file} alt={details?.title} fill />
             </div>
             <div>
               <h6 className="font-bold text-xl mb-2 text-port-red">
@@ -58,19 +63,19 @@ export default function Portfolio() {
               </h6>
               <ul>
                 <li className="text-lg py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
-                  Client:&nbsp;
+                  Client:
                   <span className="text-white font-bold">
                     {details?.client}
                   </span>
                 </li>
                 <li className="text-lg py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
-                  Technologies:&nbsp;
+                  Technologies:
                   <span className="text-white font-bold">
                     {details?.technologies}
                   </span>
                 </li>
                 <li className="text-lg py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
-                  Industry:&nbsp;
+                  Industry:
                   <span className="text-white font-bold">
                     {details?.industry}
                   </span>
@@ -94,8 +99,11 @@ export default function Portfolio() {
       </Modal>
       {showImage && (
         <Modal open={true} onClose={() => _showImage(false)} size="large">
-          <div className="w-full h-full">
-            <img src={details?.file} alt="" className="w-full h-full" />
+          <div
+            className="w-full h-full cursor-pointer"
+            onClick={() => _showImage(false)}
+          >
+            <Image src={details?.file} alt="" fill />
           </div>
         </Modal>
       )}

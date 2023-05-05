@@ -9,8 +9,8 @@ export default function AboutMe() {
         <div className="flex flex-col justify-between lg:flex-row w-full xl:w-4/5 mx-auto">
           <div className="w-full lg:w-2/3 py-6 px-3">
             <p className="text-lg lg:text-2xl font-inter text-port-off-white">
-              Hi there, I'm &npsp;
-              <span className="text-port-red">Grace Ogunyemi</span>,I'm a
+              Hi there, I&apos;m{" "}
+              <span className="text-port-red">Grace Ogunyemi</span>,I&apos;m a
               frontend developer with a passion for creating engaging and
               responsive web experiences. With several years of experience in
               the industry, I specialize in building web applications using
@@ -18,10 +18,10 @@ export default function AboutMe() {
             </p>
             <p className="mt-2 text-lg lg:text-2xl font-inter text-port-off-white">
               My expertise lies in designing and implementing complex user
-              interfaces that meet the needs of both clients and end-users. I've
-              worked on a variety of projects ranging from real estate websites
-              to e-commerce platforms and have a strong understanding of both
-              the technical and business aspects of web development.
+              interfaces that meet the needs of both clients and end-users.
+              I&apos;ve worked on a variety of projects ranging from real estate
+              websites to e-commerce platforms and have a strong understanding
+              of both the technical and business aspects of web development.
               <br />I am always eager to learn about new technologies and
               methodologies that can help improve my workflow and deliver better
               results nad this has helped me keep pace with the ever-evolving
@@ -33,7 +33,7 @@ export default function AboutMe() {
             <div>
               <ul className="text-lg text-port-off-white">
                 <li>
-                  Name:&nbsp;
+                  Name: ;
                   <span className="text-white">
                     {user.first_name} {user.last_name}
                   </span>
@@ -42,7 +42,7 @@ export default function AboutMe() {
                   email: <span className="text-white">{user.email}</span>
                 </li>
                 <li>
-                  from:&nbsp;
+                  from: ;
                   <span className="text-white">
                     {user.state}, {user.country}
                   </span>

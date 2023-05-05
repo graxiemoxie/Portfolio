@@ -62,7 +62,7 @@ export default function Contact() {
             className="w-full md:w-3/5 mt-16 md:mt-0"
             onSubmit={sendMessage}
           >
-            <h5 className="text-3xl font-bold mb-4">Let's Talk</h5>
+            <h5 className="text-3xl font-bold mb-4">Let&apos;s Talk</h5>
             <div className="flex justify-between mb-16 gap-4">
               <input
                 type="text"

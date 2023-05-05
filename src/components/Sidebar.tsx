@@ -2,6 +2,7 @@ import { sidebarLinks, socialMedia, user } from "@/constants";
 import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 interface Props {
   toggleSideBar: () => void;
@@ -12,11 +13,13 @@ export function Sidebar({ toggleSideBar }: Props) {
   return (
     <div className="w-full h-full">
       <div>
-        <img
-          src="/assets/images/ogunyemi_grace.PNG"
-          alt="Grace"
-          className="w-full h-80"
-        />
+        <div className="w-full h-80 relative">
+          <Image
+            src="/assets/images/ogunyemi_grace.PNG"
+            fill
+            alt="Grace Ogunyemi"
+          />
+        </div>
         <div className="flex items-center justify-center w-full h-12 bg-port-red">
           <span className="text-white text-lg uppercase">
             {user.first_name} {user.last_name}
