@@ -65,7 +65,10 @@ export default function AboutMe() {
             <div className="mt-8 md:mt-4">
               <a
                 className="font-nunito border-port-red border-2 border-solid hover:text-white hover:bg-port-red rounded-xl text-port-red py-2 px-6 text-lg"
-                href="https://drive.google.com/uc?export=download&id=12qcOEs_ke8-RD_an3pIiAc2by264oy8G"
+                href="/assets/files/my_resume.pdf"
+                download="Ogunyemi-Grace-Portfolio"
+                target="_blank"
+                rel="noreferrer"
               >
                 Download CV
               </a>
