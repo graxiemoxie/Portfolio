@@ -3,9 +3,9 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <div className="w-full bg-port-bg-black">
+    <div className="w-full md:h-screen bg-port-bg-black">
       <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center overflow-y-scroll">
-        <h5 className="text-4xl mt-10 mb-8 text-port-red">About Me</h5>
+        <h5 className="text-4xl mt-16 mb-8 text-port-red">About Me</h5>
         <div className="flex flex-col justify-between md:flex-row w-full xl:w-4/5 mx-auto">
           <div className="w-full lg:w-2/3 py-6 px-3">
             <p className="text-base lg:text-lg font-inter text-port-off-white">
