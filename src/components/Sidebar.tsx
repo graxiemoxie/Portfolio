@@ -13,15 +13,15 @@ export function Sidebar({ toggleSideBar }: Props) {
   return (
     <div className="w-full h-full">
       <div>
-        <div className="w-full h-80 relative">
+        <div className="w-full h-52 relative">
           <Image
             src="/assets/images/ogunyemi_grace.PNG"
             fill
             alt="Grace Ogunyemi"
           />
         </div>
-        <div className="flex items-center justify-center w-full h-12 bg-port-red">
-          <span className="text-white text-lg uppercase">
+        <div className="flex items-center justify-center w-full h-10 bg-port-red">
+          <span className="text-white text-base uppercase">
             {user.first_name} {user.last_name}
           </span>
         </div>
@@ -37,7 +37,7 @@ export function Sidebar({ toggleSideBar }: Props) {
               onClick={toggleSideBar}
               className={`${
                 pathname === l.link ? "text-port-red" : "text-white"
-              } flex w-3/5 p-4 group gap-3 items-center hover:text-port-red group`}
+              } flex w-3/5 px-4 py-3 group gap-3 items-center hover:text-port-red group`}
             >
               <i className={"text-2xl grid"}>
                 <ion-icon name={l.icon} />

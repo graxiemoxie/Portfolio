@@ -3,20 +3,20 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <div className="w-full h-full bg-port-bg-black">
-      <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center ">
-        <h5 className="text-6xl mb-6 text-port-red">About Me</h5>
+    <div className="w-full bg-port-bg-black">
+      <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center overflow-y-scroll">
+        <h5 className="text-4xl mt-8 mb-6 text-port-red">About Me</h5>
         <div className="flex flex-col justify-between lg:flex-row w-full xl:w-4/5 mx-auto">
           <div className="w-full lg:w-2/3 py-6 px-3">
-            <p className="text-lg lg:text-2xl font-inter text-port-off-white">
+            <p className="text-base lg:text-lg font-inter text-port-off-white">
               Hi there, I&apos;m{" "}
               <span className="text-port-red">Grace Ogunyemi</span>,I&apos;m a
               frontend developer with a passion for creating engaging and
-              responsive web experiences. With several years of experience in
-              the industry, I specialize in building web applications using
-              ReactJS, Typescript, and NextJS.
+              responsive web experiences. With over 3 years of experience in the
+              industry, I specialize in building web applications using ReactJS,
+              Typescript, and NextJS.
             </p>
-            <p className="mt-2 text-lg lg:text-2xl font-inter text-port-off-white">
+            <p className="mt-2 text-base lg:text-lg font-inter text-port-off-white">
               My expertise lies in designing and implementing complex user
               interfaces that meet the needs of both clients and end-users.
               I&apos;ve worked on a variety of projects ranging from real estate
@@ -29,32 +29,36 @@ export default function AboutMe() {
             </p>
           </div>
           <div>
-            <h5 className="font-bold text-2xl">Personal Info</h5>
+            <h5 className="font-bold text-lg">Personal Info</h5>
             <div>
-              <ul className="text-lg text-port-off-white">
-                <li>
-                  Name: ;
+              <ul className="text-xs text-port-off-white">
+                <li className="w-full flex">
+                  <span className="w-3/12">Name:</span>
                   <span className="text-white">
                     {user.first_name} {user.last_name}
                   </span>
                 </li>
-                <li>
-                  email: <span className="text-white">{user.email}</span>
+                <li className="w-full flex">
+                  <span className="w-3/12">email:</span>
+                  <span className="text-white">{user.email}</span>
                 </li>
-                <li>
-                  from: ;
+                <li className="w-full flex">
+                  <span className="w-3/12"> from:</span>
                   <span className="text-white">
                     {user.state}, {user.country}
                   </span>
                 </li>
-                <li>
-                  Age: <span className="text-white">{user.age}</span>
+                <li className="w-full flex">
+                  <span className="3/12">Age:</span>
+                  <span className="text-white">{user.age}</span>
                 </li>
-                <li>
-                  phone: <span className="text-white">{user.phone_number}</span>
+                <li className="w-full flex">
+                  <span className="w-3/12"> phone:</span>
+                  <span className="text-white">{user.phone_number}</span>
                 </li>
-                <li>
-                  status: <span className="text-white">{"Available"}</span>
+                <li className="w-full flex">
+                  <span className="w-3/12">status:</span>
+                  <span className="text-white">{"Available"}</span>
                 </li>
               </ul>
             </div>

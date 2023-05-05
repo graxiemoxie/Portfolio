@@ -21,7 +21,7 @@ const GetSectionLayout = memo(function E({ children }: PropsWithChildren) {
       <div
         className={`${
           toggle ? "" : "-translate-x-full lg:translate-x-0"
-        } min-w-[300px] w-1/5 h-screen bg-black absolute lg:relative z-10`}
+        } min-w-[250px] w-1/5 h-screen bg-black absolute lg:relative z-10`}
       >
         <Sidebar toggleSideBar={toggleSidebarFromSidebar} />
       </div>

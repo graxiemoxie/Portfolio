@@ -31,23 +31,23 @@ export default function Contact() {
     form.current!.reset();
   }
   return (
-    <div className="w-full h-full bg-port-bg-black">
-      <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center ">
-        <h5 className="text-6xl mb-6 text-port-red">Contact</h5>
+    <div className="w-full bg-port-bg-black">
+      <div className="animate__animated animate__fadeInRight w-full h-screen backdrop-brightness-50 flex flex-col items-center justify-center overflow-y-scroll">
+        <h5 className="text-4xl mt-10 mb-14 text-port-red">Contact</h5>
         <div className="flex flex-col md:flex-row gap-4 w-4/5 mx-auto">
           <div className="w-full md:w-2/5">
-            <h5 className="text-3xl mb-4 font-bold">Address</h5>
-            <p className="text-xl mb-2 flex gap-3 items-center">
+            <h5 className="text-xl mb-4 font-bold">Address</h5>
+            <p className="text-base mb-2 flex gap-3 items-center">
               <ion-icon name="home-outline"></ion-icon>{" "}
               <span>Lagos, Nigeria</span>
             </p>
-            <p className="text-xl mb-2">
+            <p className="text-base mb-2">
               <a href="tel:+2349023055247" className="flex gap-3 items-center">
                 <ion-icon name="call-outline"></ion-icon>
                 <span>+2349023055247</span>
               </a>
             </p>
-            <p className="text-xl mb-2">
+            <p className="text-base mb-2">
               <a
                 href="mailto:ogunyemigrace.og@gmail.com"
                 className="flex gap-3 items-center"
@@ -62,15 +62,15 @@ export default function Contact() {
             className="w-full md:w-3/5 mt-16 md:mt-0"
             onSubmit={sendMessage}
           >
-            <h5 className="text-3xl font-bold mb-4">Let&apos;s Talk</h5>
-            <div className="flex justify-between mb-16 gap-4">
+            <h5 className="text-xl font-bold mb-4">Let&apos;s Talk</h5>
+            <div className="flex justify-between mb-10 gap-4">
               <input
                 type="text"
                 name="name"
                 id="name"
                 placeholder="Full Name"
                 required
-                className="bg-transparent border-2 border-solid rounded w-2/4 p-4 focus:outline-none focus:border-port-red"
+                className="bg-transparent border-2 border-solid rounded w-2/4 p-2 focus:outline-none focus:border-port-red"
               />
               <input
                 type="email"
@@ -78,7 +78,7 @@ export default function Contact() {
                 id="email"
                 placeholder="email"
                 required
-                className="bg-transparent border-2 border-solid rounded w-2/4 p-4 focus:outline-none focus:border-port-red"
+                className="bg-transparent border-2 border-solid rounded w-2/4 p-2 focus:outline-none focus:border-port-red"
               />
             </div>
             <input
@@ -87,22 +87,22 @@ export default function Contact() {
               id="subject"
               placeholder="Subject"
               required
-              className="bg-transparent border-2 mb-4 border-solid rounded w-full p-4 focus:outline-none focus:border-port-red"
+              className="bg-transparent border-2 mb-4 border-solid rounded w-full p-2 focus:outline-none focus:border-port-red"
             />
             <div className="flex justify-center">
               <textarea
                 name="message"
                 id="message"
                 cols={30}
-                rows={10}
+                rows={6}
                 placeholder="message"
                 required
-                className="bg-transparent w-full border-2 border-solid rounded p-4 focus:outline-none focus:border-port-red"
+                className="bg-transparent w-full border-2 border-solid rounded p-2 focus:outline-none focus:border-port-red"
               ></textarea>
             </div>
             <div className="flex justify-center">
               <button
-                className="flex items-center gap-2 mt-14 font-nunito border-port-red border-2 border-solid hover:text-white hover:bg-port-red rounded-xl text-port-red py-3 px-8 text-2xl"
+                className="flex items-center gap-2 mt-8 mb-5 font-nunito bg-port-red border-none hover:text-port-red hover:bg-port-off-white rounded-xl text-white py-3 px-8 text-2xl"
                 type="submit"
               >
                 Submit
