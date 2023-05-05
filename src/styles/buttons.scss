@@ -1,0 +1,56 @@
+@import "./_partials/colours.scss";
+
+.my_btn {
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  padding: 15px 25px;
+  border: 0;
+  background-color: unset;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.my_btn_md {
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  padding: 8px 18px;
+  border: 0;
+  letter-spacing: 0.0115em;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.my_btn_sm {
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 10px;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.my_btn_outline {
+  border: 2px solid $port-gray;
+}
+
+.my_btn_icon {
+  &:focus {
+    outline: none;
+  }
+}
