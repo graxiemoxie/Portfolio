@@ -16,6 +16,15 @@ export default function Portfolio() {
   });
   const [showModal, _showModal] = useState(false);
   const [showImage, _showImage] = useState(false);
+
+  function toggleModal() {
+    _showModal((prev) => !prev);
+  }
+  function toggleImage() {
+    _showImage((prev) => !prev);
+  }
+  console.log("showModal", showModal);
+  console.log("showImage", showImage);
   return (
     <div className="w-full h-full bg-port-bg-dark3 relative">
       <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center overflow-y-scroll">
@@ -26,8 +35,8 @@ export default function Portfolio() {
               key={i.file}
               className="rounded w-full h-full relative"
               onClick={() => {
-                _showModal(true);
                 _details(i);
+                _showModal((prev) => !prev);
               }}
             >
               <div className="w-full h-full relative">
@@ -42,43 +51,48 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
-      <Modal open={showModal} onClose={() => _showModal(false)} size="auto">
+      <Modal
+        open={showModal}
+        onClose={() => _showModal((prev) => !prev)}
+        size="auto"
+      >
         <div className="max-w-[1000px] p-6">
           <h5 className="text-3xl text-port-red text-center">
             {details?.title}
           </h5>
-          <p className="md:text-xl text-center my-4">{details?.info}</p>
+          <p className="md:text-lg text-center my-4">{details?.info}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div
+            <button
               className="w-full h-full cursor-pointer"
-              onClick={() => _showImage(true)}
+              onClick={() => _showImage((prev) => !prev)}
             >
-              <Image src={details?.file} alt={details?.title} fill />
-            </div>
+              {/* <Image src={details?.file} alt={details?.title} fill /> */}
+              <img src={details?.file} alt={details?.title} />
+            </button>
             <div>
               <h6 className="font-bold text-xl mb-2 text-port-red">
                 Project Details
               </h6>
               <ul>
-                <li className="text-lg py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
+                <li className="text-base py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
                   Client:
                   <span className="text-white font-bold">
                     {details?.client}
                   </span>
                 </li>
-                <li className="text-lg py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
+                <li className="text-base py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
                   Technologies:
                   <span className="text-white font-bold">
                     {details?.technologies}
                   </span>
                 </li>
-                <li className="text-lg py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
+                <li className="text-base py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
                   Industry:
                   <span className="text-white font-bold">
                     {details?.industry}
                   </span>
                 </li>
-                <li className="text-lg mb-2 text-port-off-white pt-2 flex gap-2">
+                <li className="text-base mb-2 text-port-off-white pt-2 flex gap-2">
                   <span>Url:</span>
                   <a
                     href={details?.url}
@@ -95,16 +109,18 @@ export default function Portfolio() {
           </div>
         </div>
       </Modal>
-      {showImage && (
-        <Modal open={true} onClose={() => _showImage(false)} size="large">
-          <div
-            className="w-full h-full cursor-pointer"
-            onClick={() => _showImage(false)}
-          >
-            <Image src={details?.file} alt="" fill />
-          </div>
-        </Modal>
-      )}
+      <Modal
+        open={showImage}
+        onClose={() => _showImage((prev) => !prev)}
+        size="large"
+      >
+        <div
+          className="w-full h-full cursor-pointer"
+          onClick={() => _showImage((prev) => !prev)}
+        >
+          <Image src={details?.file} alt="" fill />
+        </div>
+      </Modal>
     </div>
   );
 }
