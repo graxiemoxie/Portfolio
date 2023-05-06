@@ -21,14 +21,14 @@ const GetSectionLayout = memo(function E({ children }: PropsWithChildren) {
       <div
         className={`${
           toggle ? "" : "-translate-x-full lg:translate-x-0"
-        } min-w-[250px] w-1/5 h-screen bg-black absolute lg:relative z-10`}
+        } min-w-[250px] w-1/5 h-screen bg-black absolute lg:relative z-20`}
       >
         <Sidebar toggleSideBar={toggleSidebarFromSidebar} />
       </div>
-      <div className="w-full h-screen lg:w-4/5 bg-cover bg-center ">
+      <div className="w-full h-screen lg:w-4/5 bg-cover bg-center relative">
         <div className="w-full md:h-full">
           <Navbar toggleSideBar={toggleSideBar} />
-          <div className="w-full overflow-y-scroll">{children}</div>
+          <div className="w-full h-screen">{children}</div>
         </div>
       </div>
     </div>
