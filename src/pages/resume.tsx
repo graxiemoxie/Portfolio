@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Resume() {
   return (
-    <div className="w-full h-screen bg-port-bg-black overflow-y-scroll py-10">
-      <div className="animate__animated animate__fadeInRight w-full backdrop-brightness-50 flex flex-col items-center justify-center">
+    <div className="w-full h-screen bg-port-bg-black overflow-y-scroll ">
+      <div className="animate__animated animate__fadeInRight w-full py-10 backdrop-brightness-50 flex flex-col items-center justify-center">
         <h5 className="text-4xl mt-20 text-port-red">Resume</h5>
 
         <div className="w-4/5 mx-auto">

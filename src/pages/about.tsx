@@ -3,8 +3,8 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <div className="w-full h-screen overflow-y-scroll bg-port-bg-black py-10">
-      <div className="animate__animated animate__fadeInRight w-full backdrop-brightness-50 flex flex-col items-center justify-center">
+    <div className="w-full h-screen overflow-y-scroll bg-port-bg-black">
+      <div className="animate__animated animate__fadeInRight w-full py-10 backdrop-brightness-50 flex flex-col items-center justify-center">
         <h5 className="text-4xl mt-20 mb-8 text-port-red">About Me</h5>
         <div className="flex flex-col justify-between md:flex-row w-full xl:w-4/5 mx-auto">
           <div className="w-full lg:w-2/3 py-6 px-3">

@@ -18,8 +18,8 @@ export default function Portfolio() {
   const [showImage, _showImage] = useState(false);
 
   return (
-    <div className="w-full h-screen overflow-y-scroll bg-port-bg-dark3 relative py-10">
-      <div className="animate__animated animate__fadeInRight w-full backdrop-brightness-50 flex flex-col items-center justify-center">
+    <div className="w-full h-screen overflow-y-scroll bg-port-bg-dark3 relative ">
+      <div className="animate__animated animate__fadeInRight w-full py-10 backdrop-brightness-50 flex flex-col items-center justify-center">
         <h5 className="text-4xl mt-20 mb-10 text-port-red">Portfolio</h5>
         <div className="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           {portfolio.map((i) => (
