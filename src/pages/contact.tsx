@@ -31,9 +31,9 @@ export default function Contact() {
     form.current!.reset();
   }
   return (
-    <div className="w-full bg-port-bg-black">
-      <div className="animate__animated animate__fadeInRight w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center overflow-y-scroll">
-        <h5 className="text-4xl mt-10 mb-14 text-port-red">Contact</h5>
+    <div className="w-full h-screen bg-port-bg-black overflow-y-scroll py-10">
+      <div className="animate__animated animate__fadeInRight w-full backdrop-brightness-50 flex flex-col items-center justify-center">
+        <h5 className="text-4xl mt-20 mb-14 text-port-red">Contact</h5>
         <div className="flex flex-col md:flex-row gap-4 w-4/5 mx-auto">
           <div className="w-full md:w-2/5">
             <h5 className="text-xl mb-4 font-bold">Address</h5>

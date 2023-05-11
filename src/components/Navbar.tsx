@@ -6,7 +6,7 @@ interface Props {
 }
 export function Navbar({ toggleSideBar }: Props) {
   return (
-    <div className="flex lg:hidden items-center bg-[#343434] py-4 sticky top-0 left-0 z-10">
+    <div className="flex lg:hidden items-center bg-[#343434] py-4 absolute w-full top-0 left-0 z-10">
       <p className="w-11/12 text-white text-center text-3xl uppercase">
         {user.first_name} {user.last_name}
       </p>

@@ -17,7 +17,7 @@ const GetSectionLayout = memo(function E({ children }: PropsWithChildren) {
   }
 
   return (
-    <div className="w-full h-full lg:flex relative">
+    <div className="w-full h-full flex flex-col lg:flex-row relative overflow-y-hidden">
       <div
         className={`${
           toggle ? "" : "-translate-x-full lg:translate-x-0"
