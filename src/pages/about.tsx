@@ -65,7 +65,7 @@ export default function AboutMe() {
             <div className="my-8 md:my-4">
               <a
                 className="font-nunito border-port-red border-2 border-solid hover:text-white hover:bg-port-red rounded-xl text-port-red py-2 px-6 text-lg"
-                href="/assets/files/my_resume.pdf"
+                href="https://docs.google.com/document/d/1enXFVe1Ju3asksMIvOJas5ewqDWD1N8v7vvfm1zSthY/edit?usp=sharing"
                 download="Ogunyemi-Grace-Portfolio"
                 target="_blank"
                 rel="noreferrer"
