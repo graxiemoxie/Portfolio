@@ -61,7 +61,14 @@ export const socialMedia = [
 
 export const resume = [
   {
-    duration: "March 2022 - PRESENT",
+    duration: "May 2023 - Present",
+    title: "Software Developer",
+    company: "Cryptigo LLC",
+    description:
+      "I collaborate with a cross-functional team, contributing to the development of the frontend UI of the company's website. This includes conducting code reviews, fostering code quality, and adhering to best practices within the development team. I've played a pivotal role in integrating PayloadCMS, successfully incorporating content management features into the application. Utilizing React, Next.js, TypeScript, and RTK Query, I architect and design various features for an engaging user experience. I've also improved the UI design, addressed design issues, and demonstrated a commitment to code quality through comprehensive unit tests using Jest.",
+  },
+  {
+    duration: "March 2022 - April 2023",
     title: "Frontend Developer",
     company: "Cliqki",
     description:

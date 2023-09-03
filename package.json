@@ -16,6 +16,7 @@
     "@zeit/next-sass": "^1.0.1",
     "animate.css": "^4.1.1",
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
     "line-clamp": "^1.0.0",

@@ -18,6 +18,7 @@ export function Sidebar({ toggleSideBar }: Props) {
             src="/assets/images/ogunyemi_grace.PNG"
             fill
             alt="Grace Ogunyemi"
+            className="object-cover"
           />
         </div>
         <div className="flex items-center justify-center w-full h-10 bg-port-red">

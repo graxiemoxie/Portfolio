@@ -1,9 +1,28 @@
 import { user } from "@/constants";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import Typed from "react-typed";
+import axios from "axios";
 
 export default function Home() {
+  useEffect(() => {
+    const mainToken =
+      "009f88446daf6bace9bdcb3a3ebe522d0e1fb862e2eaba0aac48f5cf4e544c";
+    const testToken =
+      "01276041cbb86b4cc9d3c8f2bb8bf3229e07cba8960f36dc4c1f40a2506875666679";
+    const url = `https://tokens.cardano.org/metadata/${mainToken}`;
+    const config = {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json;charset=utf-8",
+      },
+    };
+    axios
+      .get(url, config)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className="w-full h-screen bg-port-bg-big">
       <div className="animate__animated animate__fadeInRight w-full h-screen backdrop-brightness-50 flex flex-col items-center justify-center">
