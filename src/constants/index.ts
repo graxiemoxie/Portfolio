@@ -1,7 +1,6 @@
 export const user = {
   first_name: "Grace",
   last_name: "Ogunyemi",
-  age: "25",
   email: "ogunyemigrace.og@gmail.com",
   phone_number: "+2349023055247",
   state: "Lagos",
@@ -65,7 +64,7 @@ export const resume = [
     title: "Software Developer",
     company: "Cryptigo LLC",
     description:
-      "I collaborate with a cross-functional team, contributing to the development of the frontend UI of the company's website. This includes conducting code reviews, fostering code quality, and adhering to best practices within the development team. I've played a pivotal role in integrating PayloadCMS, successfully incorporating content management features into the application. Utilizing React, Next.js, TypeScript, and RTK Query, I architect and design various features for an engaging user experience. I've also improved the UI design, addressed design issues, and demonstrated a commitment to code quality through comprehensive unit tests using Jest.",
+      "I collaborate with a cross-functional team, contributing to the development of the frontend UI of the company's website. This includes conducting code reviews, fostering code quality, and adhering to best practices within the development team. I've played a pivotal role in integrating PayloadCMS as a headless CMS to manage website content, successfully incorporating content management features into the application. Additionally, I've integrated several wallets into the web app, including VESPR and TYPHON, to facilitate seamless transactions, I architect and design various features for an engaging user experience. I've also improved the UI design, addressed design issues, and demonstrated a commitment to code quality through comprehensive unit tests using Jest.",
   },
   {
     duration: "March 2022 - April 2023",
@@ -91,6 +90,15 @@ export const resume = [
 ];
 
 export const portfolio = [
+  {
+    title: "Mynth",
+    file: "/assets/images/portfolios/dark-mynth.png",
+    info: "Mynth is a DAO that connects Cardano with other blockchains, transforming synthetic assets. A system that enables cross-chain swaps, opening new opportunities in the crypto world.",
+    client: "Cryptigo LLC",
+    technologies: "NextJS, Typescript, Docker, NodeJs, Tailwind,Jest, RTK Query,",
+    industry: "Blockchain and Cryptocurrency(FinTech)",
+    url: "https://mynth.ai",
+  },
   {
     title: "Student Portal",
     file: "/assets/images/portfolios/student_dashboard.png",

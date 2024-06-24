@@ -31,8 +31,8 @@ export default function Portfolio() {
                 _showModal((prev) => !prev);
               }}
             >
-              <div className="w-full h-full relative">
-                <img src={i.file} alt={i.industry} />
+              <div className="w-full h-[153px] md:h-[133.305px] xl:h-[190px] relative">
+                <Image src={i.file} alt={i.industry} fill />
               </div>
 
               <div className="bg-port-red cursor-pointer w-full h-full absolute top-0 left-0 transition-all duration-300 delay-300 ease-out opacity-0 hover:opacity-80 transform translate-y-3 hover:translate-y-0 flex flex-col items-center justify-center">
@@ -52,38 +52,38 @@ export default function Portfolio() {
           <h5 className="text-3xl text-port-red text-center">
             {details?.title}
           </h5>
-          <p className="md:text-lg text-center my-4">{details?.info}</p>
+          <p className="text-sm md:text-lg text-center my-4">{details?.info}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <button
-              className="w-full h-full cursor-pointer"
+              className="w-full h-[180px] lg:h-[216px] relative cursor-pointer"
               onClick={() => _showImage((prev) => !prev)}
             >
-              <img src={details?.file} alt={details?.title} />
+              <Image src={details?.file} alt={details?.title} fill/>
             </button>
             <div>
-              <h6 className="font-bold text-xl mb-2 text-port-red">
+              <h6 className="font-bold text-lg md:text-xl mb-2 text-port-red">
                 Project Details
               </h6>
               <ul>
-                <li className="text-base py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
+                <li className="text-sm md:text-base py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
                   Client:
                   <span className="text-white font-bold">
                     {details?.client}
                   </span>
                 </li>
-                <li className="text-base py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
+                <li className="text-sm md:text-base py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
                   Technologies:
                   <span className="text-white font-bold">
                     {details?.technologies}
                   </span>
                 </li>
-                <li className="text-base py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
+                <li className="text-sm md:text-base py-2 text-port-off-white border-slate-600 border-b border-solid flex gap-2">
                   Industry:
                   <span className="text-white font-bold">
                     {details?.industry}
                   </span>
                 </li>
-                <li className="text-base mb-2 text-port-off-white pt-2 flex gap-2">
+                <li className="text-sm md:text-base mb-2 text-port-off-white pt-2 flex gap-2">
                   <span>Url:</span>
                   <a
                     href={details?.url}
