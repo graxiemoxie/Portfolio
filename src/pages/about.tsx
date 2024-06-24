@@ -33,31 +33,27 @@ export default function AboutMe() {
             <div>
               <ul className="text-xs text-port-off-white">
                 <li className="w-full flex">
-                  <span className="w-3/12">Name:</span>
+                  <span className="w-14">Name:</span>
                   <span className="text-white">
                     {user.first_name} {user.last_name}
                   </span>
                 </li>
                 <li className="w-full flex">
-                  <span className="w-3/12">email:</span>
+                  <span className="w-14">email:</span>
                   <span className="text-white">{user.email}</span>
                 </li>
                 <li className="w-full flex">
-                  <span className="w-3/12"> from:</span>
+                  <span className="w-14"> from:</span>
                   <span className="text-white">
                     {user.state}, {user.country}
                   </span>
                 </li>
                 <li className="w-full flex">
-                  <span className="3/12">Age:</span>
-                  <span className="text-white">{user.age}</span>
-                </li>
-                <li className="w-full flex">
-                  <span className="w-3/12"> phone:</span>
+                  <span className="w-14"> phone:</span>
                   <span className="text-white">{user.phone_number}</span>
                 </li>
                 <li className="w-full flex">
-                  <span className="w-3/12">status:</span>
+                  <span className="w-14">status:</span>
                   <span className="text-white">{"Available"}</span>
                 </li>
               </ul>
