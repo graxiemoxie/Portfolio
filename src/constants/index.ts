@@ -1,10 +1,10 @@
 export const user = {
   first_name: "Grace",
-  last_name: "Ogunyemi",
-  email: "ogunyemigrace.og@gmail.com",
-  phone_number: "+2349023055247",
-  state: "Lagos",
-  country: "Nigeria",
+  last_name: "Adeoye",
+  email: "ag.adeoyegrace@gmail.com",
+  phone_number: "+49 155 6560982",
+  state: "Stuttgart",
+  country: "Germany",
   occupation: "Frontend Developer",
 };
 export const sidebarLinks = [
@@ -62,16 +62,16 @@ export const resume = [
   {
     duration: "May 2023 - Present",
     title: "Software Developer",
-    company: "Cryptigo LLC",
+    company: "Mynth",
     description:
-      "I collaborate with a cross-functional team, contributing to the development of the frontend UI of the company's website. This includes conducting code reviews, fostering code quality, and adhering to best practices within the development team. I've played a pivotal role in integrating PayloadCMS as a headless CMS to manage website content, successfully incorporating content management features into the application. Additionally, I've integrated several wallets into the web app, including VESPR and TYPHON, to facilitate seamless transactions, I architect and design various features for an engaging user experience. I've also improved the UI design, addressed design issues, and demonstrated a commitment to code quality through comprehensive unit tests using Jest.",
+      "Collaborate with a cross-functional team, contributing to the development of the frontend UI of the company's website. This includes conducting code reviews, fostering code quality, and adhering to best practices within the development team. I've played a pivotal role in integrating PayloadCMS as a headless CMS to manage website content, successfully incorporating content management features into the application. Additionally, I've integrated several wallets into the web app, including VESPR and TYPHON, to facilitate seamless transactions, I architect and design various features for an engaging user experience. I've also improved the UI design, addressed design issues, and demonstrated a commitment to code quality through comprehensive unit tests using Jest.",
   },
   {
     duration: "March 2022 - April 2023",
     title: "Frontend Developer",
     company: "Cliqki",
     description:
-      "I worked on the re-development of Cliqki application, implementing a modern React.js component-based UI system using Next.js framework and Typescript resulting in a more scalable and maintainable codebase. Additionally, I developed a dynamic newsfeed page from scratch using React, Tailwind, and CSS, incorporating reusable components for code efficiency and maintainability. I also implemented an Identity Verification feature to ensure secure user authentication, collaborated with cross-functional teams, and resolved critical issues in the payment gateway. Furthermore, I created an onboarding tour feature using React and CSS, implemented a virtual transaction feature, performed code reviews, added new animations, and created an analytics page to track user activities.",
+      "Worked on the re-development of Cliqki application, implementing a modern React.js component-based UI system using Next.js framework and Typescript resulting in a more scalable and maintainable codebase. Additionally, I developed a dynamic newsfeed page from scratch using React, Tailwind, and CSS, incorporating reusable components for code efficiency and maintainability. I also implemented an Identity Verification feature to ensure secure user authentication, collaborated with cross-functional teams, and resolved critical issues in the payment gateway. Furthermore, I created an onboarding tour feature using React and CSS, implemented a virtual transaction feature, performed code reviews, added new animations, and created an analytics page to track user activities.",
   },
   {
     duration: "Sept 2021 - November 2022",
@@ -91,10 +91,19 @@ export const resume = [
 
 export const portfolio = [
   {
+    title: "Novaswap",
+    file: "/assets/images/portfolios/novaswap.png",
+    info: "MEffortless, trustless token swaps across chains like Base, Solana, and Tron. Powered by intents and Mynth Protocol.",
+    client: "Mynth",
+    technologies: "NextJS, Typescript, Tailwind, RTK Query, Wagmi, Viem and other blockchain tools",
+    industry: "Blockchain and Cryptocurrency(FinTech)",
+    url: "https://www.novaswap.io",
+  },
+  {
     title: "Mynth",
     file: "/assets/images/portfolios/dark-mynth.png",
     info: "Mynth is a DAO that connects Cardano with other blockchains, transforming synthetic assets. A system that enables cross-chain swaps, opening new opportunities in the crypto world.",
-    client: "Cryptigo LLC",
+    client: "Mynth",
     technologies: "NextJS, Typescript, Docker, NodeJs, Tailwind,Jest, RTK Query,",
     industry: "Blockchain and Cryptocurrency(FinTech)",
     url: "https://mynth.ai",
